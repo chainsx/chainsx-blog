@@ -1,0 +1,21 @@
+
+<html>
+<head>
+<title>
+</title>
+</head>
+<body>
+<!--
+获得当前日期（年月日）并显示在段落内
+-->
+    <p id="ymd"></p>
+    <script>
+        var date = new Date()
+        var y = date.getFullYear();
+        var m = date.getMonth()+1;
+        var d = date.getDate();
+        document.getElementById("ymd").innerHTML = "更新时间："+y+"-"+m+"-"+d+"-"+date;
+    </script>
+    <script type="text/javascript" src="dtxt1.js"></script>
+</body>
+</html>
