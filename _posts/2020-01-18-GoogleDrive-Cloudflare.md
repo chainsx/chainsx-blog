@@ -7,7 +7,11 @@ video: false
 comments: true
 ---
 
-感谢https://github.com/donwa/goindex的开源精神
+感谢
+
+https://github.com/donwa/goindex
+
+的开源精神
 
 先打开[这个链接](https://installen.gd.workers.dev/)，
 
