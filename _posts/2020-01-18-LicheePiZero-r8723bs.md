@@ -59,3 +59,4 @@ arch/arm/boot/dts/sun8i-v3s-licheepi-zero.dts
 
 ## 注意使用sun8i-v3s-licheepi-zero-dock.dtb才能使能wlan0
 
+[image](http://dl.chainsx.cn/ubuntu-16.04-licheepi-zero.img.xz)
