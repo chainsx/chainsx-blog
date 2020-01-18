@@ -7,7 +7,7 @@ permalink:	/blog/:title
 title:            ChainsX
 tagline:          'blog'
 description:      'My personal blog.'
-url:              httpa://chainsx.cn
+url:              https://chainsx.cn
 baseurl:          
 commentsystem:    google
 disqus:           example
