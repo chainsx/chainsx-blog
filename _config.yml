@@ -7,7 +7,7 @@ permalink:	/blog/:title
 title:            ChainsX
 tagline:          'blog'
 description:      'My personal blog.'
-url:              http://cxbusy.github.io
+url:              httpa://chainsx.cn
 baseurl:          
 commentsystem:    google
 disqus:           example
@@ -23,21 +23,15 @@ icon:             /assets/images/icon.png
 cover:            /assets/images/cover.jpg
 
 social:
-  - icon:         twitter
-    url:          https://twitter.com/iancamporez
-    desc:         Follow me on twitter
 
   - icon:         github
     url:          https://github.com/chainsx
-    desc:         Fork me on github
+    desc:         follow me on github
 
   - icon:         googleplus-alt
     url:          https://google.com/+pzhrhlx
     desc:         Add me on google+
 
-  - icon:         feed
-    url:          http://camporez.github.io/atom.xml
-    desc:         Subscribe to my feed
 
 menu:
   - title:        主页
@@ -48,7 +42,7 @@ menu:
 
 copyright:
   author:         ChainsX
-  url:            https://chainsx.xyz
+  url:            https://chainsx.github.io
   type_title:     home page
   type_url:       https://chainsx.cn
 
