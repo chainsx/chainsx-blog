@@ -57,9 +57,42 @@ patch -p1 < add-patch_dts_file-wifi-xradio.patch
 
 ## 附上编译好的文件
 
-[OrangePi Zero Lean Openwrt with xr819](https://www.lanzous.com/i8qv4fe)
+[OrangePi Zero Lean Openwrt with xr819](http://dl.chainsx.cn/bin/targets/sunxi/cortexa7/openwrt-sunxi-cortexa7-sun8i-h2-plus-orangepi-zero-ext4-sdcard.img.gz)
 
 ## 存在的问题
 * wan口不能默认dhcp，建议新增接口lan来作为无线的dhcp服务器，将wan口设为dhcp
-* 热点不会默认开放
-* ap默认不能使用，需要将工作频率-模式改为传统
+
+在第一次上电开机后改/etc/config/network
+```
+config interface 'loopback'
+        option ifname 'lo'
+        option proto 'static'
+        option ipaddr '127.0.0.1'
+        option netmask '255.0.0.0'
+
+config globals 'globals'
+        option ula_prefix 'fd98:a9fe:0dbe::/48'
+
+config interface 'lan'
+        option type 'bridge'
+        option ifname 'wlan0'
+        option proto 'static'
+        option ipaddr '192.168.4.1'
+        option netmask '255.255.255.0'
+        option ip6assign '60'
+
+config interface 'wan'
+        option ifname 'eth0'
+        option proto 'dhcp'
+
+config interface 'vpn0'
+        option ifname 'tun0'
+        option proto 'none'
+```
+* 热点不会默认开放，ap默认不能使用，需要将工作频率-模式改为传统
+
+改/etc/config/wirless，删掉以下行
+
+```
+option htmode 'HT20'
+```
