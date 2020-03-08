@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "dev-c++更新交叉编译工具链"
+title: "dev-c++更新编译工具链"
 quote: "嗷~"
 image: false
 video: false
